@@ -1,0 +1,28 @@
+								<ul class="dropdown-menu" style="width:400px;padding:0;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;">
+									<div class="box box-success" style="margin-bottom:0;">
+										<div class="box-title box-header with-border">
+											<h4><i class="fa fa-upload"></i> CẬP NHẬT HỆ THỐNG</h4>
+										</div>
+										<div class="box-body" style="padding:1px;">
+											<div class="tabs-container">
+												<div class="tab-content">
+													<div class="box-body">
+														<ul>
+															<h4  style="color:red;text-shadow: 0px 0px 0px rgb(17, 17, 17), 0px 0px 0.5em yellow, 0px 0px 0.4em yellow;"><li>Hệ Thống Đã Cập Nhật Các Chức Năng Sau.</li></h4><br>
+														</ul>
+														<ol>
+															<li class="list-group-item">Chức Năng Bot Tương Tác Cực Chất.</li>
+															<li class="list-group-item">Chức Năng Auto Xoá Bạn, Xoá Status, Inbox Pro.</li>
+															<li class="list-group-item">Chức Năng Đăng Nhập Bằng Cookie.(Máy Tính)</li>
+															<li class="list-group-item">Chức Năng Đăng Nhập Bằng Ứng Dụng.(Máy Tính)</li>
+															<li class="list-group-item">Chức Năng Lấy Token Chống Checkpoint 99,99%.</li>
+															<li class="list-group-item">Sửa Lỗi Checkpoint Khi Đăng Nhập Tài Khoản.</li>
+															<li class="list-group-item">Và Cuối Cùng Là Cảm Ơn Các Bạn Đã Tin Tưởng Và Sử Dụng Bot Tại Hệ Thống Của Mình.</li>
+															<li class="list-group-item" style="color:red;">Hãy Cùng Nhau Đăng Nhập Và Tận Hưởng.</li>
+														</ol>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</ul>

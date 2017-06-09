@@ -1,0 +1,91 @@
+﻿/**
+ *
+ * curl_kun_ol
+ *
+ */
+ 
+Tính năng:
+- Web dùng để curl like
+Hướng dẫn:
+- vào file config.php để config lại CSDL
+
+/**
+ *
+ * curl_like
+ *
+ */
+
+Tính năng:
+- Script dùng để curl like
+Hướng dẫn:
+- cron job cho file curl.php
+
+/**
+ *
+ * botshare
+ *
+ */
+Đăng nhập:
+admin | 12345
+Thông tin:
+- Code Bot Share
+- Có Panel quản lý cho admin
+- Có Bot share cho thành viên vip
+- Tài khoản admin :
+Hướng dẫn:
+- Cấu hình file /config.php
+- Cron toàn bộ file trong thư mục /cron
+
+/**
+ *
+ * bot_like_facebook_ver_new_2017
+ *
+ */
+Hướng dẫn:
+- Config tại _cnF/_star_cn_F.php
+- Chạy file /_cnF/_star_install.php để cài đặt data
+
+/**
+ *
+ * bot_facebook_cookie
+ *
+ */
+Tính năng:
+- Bot like
+- Bot Cmt
+- Bot Đăng Stt Theo Nội Dung
+- Bot Simsimi Cmt Status
+- Tool Get Token Bằng Cookie
+- Tool Lấy ID Facebook
+Hướng dẫn:
+- Tìm file /config.php để cấu hình nhé 
+- Cron các file trong thư mục /cron
+
+/**
+ *
+ * bot_camxuc
+ *
+ */
+Tính năng:
+- Bot Cảm Xúc (Haha, Love, Wow, Angry, Thankfull)
+- Bot Comment(Tùy Theo Bạn Nhập)
+Hướng dẫn:
+- Vô root tìm file /config.php để cấu hình phù hợp với Host
+-Cron file /botcx.php 
+
+/**
+ *
+ * web_tong_hop_curl
+ *
+ */
+Tính năng:
+- curl share
+- curl cmt
+- get token full quyền
+- tool like
+- tool cmt
+- tool share
+- tool cài simsim
+Hướng dẫn:
+- Vô thư mục /cmt , mở file config.php , thay bằng domain của bạn
+- Vô thư mục /like , mở file config.php , thay bằng domain của bạn

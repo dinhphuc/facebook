@@ -1,0 +1,108 @@
+﻿/**
+ *
+ * bot_like_facebook_ver_new_2017
+ *
+ */
+Hướng dẫn:
+- Config tại _cnF/_star_cn_F.php
+- Chạy file /_cnF/_star_install.php để cài đặt data
+
+Chào các bạn, hôm qua mình có chia sẽ 7 web auto facebook
+
+Nhiều bạn còn đang băn khoăn làm thế nào để sử dụng, nay mình sẽ hướng dẫn
+
+chi tiết cho bạn cách xài
+
+Yêu cầu:
+
+- Hosting (Ở đây mình xài HostGator, cPanel 11 => Bạn có thể xài host free
+
+như là 000webhost.com hoặc bytehost.com)
+
+- Domain (Mình sử dụng freenom, miễn phí)
+
+- bot_like_facebook_ver_new_2017.zip ( Không thể thiếu r )
+
+Ok, tiến hành cài đặt nào
+
+B1: Tải bot_like_facebook_ver_new_2017.zip lên host
+
+File Manager->public_html->Upload->Chọn file
+
+B2: Giải nén ( Extract )
+
+B3: Config tại Folder _cnF và File là _star_cn_F.php
+
+ở đây yêu cầu database, mình tiến hành tạo nó thôi
+
+B4: Tạo Database
+
+quay lại cPanel->MySQL Databases
+
+Tạo Database, tên database mình đặt là db nhưng đầy đủ là ztest_db
+
+*ztest là tên đăng nhập vào cPanel nha
+
+OOps... Mình quên chưa xóa database cũ, với user cũ
+
+Ok lại nào, tạo database tên là db
+
+Sau khi xong, kéo xuống dưới chỗ MySQL Users Add New User, tiến hành tạo
+
+Username và Password để truy cập vào Database
+
+Ok tạo xong user r, chúng ta tiến hành cấp quyền cho User để kết nối vào
+
+Database
+
+Kéo xuống dưới cùng bạn sẽ thấy Add User To Database, chọn User với Database
+
+bạn vừa tạo và bấm Add
+
+Chọn All Privileges -> Bấm Make Changes
+
+Ok sau khi tạo xong, ta có thông số như sau:
+
+Tên Database: ztest_db
+
+Tên User: ztest_user
+
+Mật Khẩu: wUnQJd]TJXrd
+
+B6: Tiến hành chỉnh sửa file config
+
+$db_host = 'localhost'; //MySQL HOST ( mặc định )
+$db_user = 'Tên User'; //MySQL USER
+$db_pass = 'Mật Khẩu'; //MySQL PASS
+$db_name = 'Tên Database'; //MySQL NAME
+
+dựa vào form trên thì sau khi sửa xong sẽ thành
+
+$db_host = 'localhost'; //MySQL HOST
+$db_user = 'ztest_user'; //MySQL USER
+$db_pass = 'wUnQJd]TJXrd'; //MySQL PASS
+$db_name = 'ztest_db'; //MySQL NAME
+
+chỉnh sửa thông số site ở trên
+
+Save lại
+
+Hướng dẫn:
+- Config tại _cnF/_star_cn_F.php ( Xong )
+- Chạy file /_cnF/_star_install.php để cài đặt data
+
+Xong 1 phần, h làm phần 2 nào
+
+B7: gõ trên thanh địa chỉ http://tên_domain/_cnF/_star_install.php
+
+ở đây tên miền của mình là ztest.gq
+
+nên sẽ thành là http://ztest.gq/_cnF/_star_install.php
+
+Ok vậy là xong, nếu bao lỗi bạn xem lại phần config database đúng chưa nha
+
+B8: Xem thảnh quả, COOLLLLLLL
+
+Một trang web tuyệt để bạn tiến hành auto Facebook
+
+Chúc các bạn 1 ngày sướng nức

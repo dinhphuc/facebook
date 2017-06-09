@@ -1,0 +1,20 @@
+RewriteEngine On
+ErrorDocument 400 /_cnF/_star_loi.php
+ErrorDocument 401 /_cnF/_star_loi.php
+ErrorDocument 402 /_cnF/_star_loi.php
+ErrorDocument 403 /_cnF/_star_loi.php
+ErrorDocument 404 /_cnF/_star_loi.php
+ErrorDocument 500 /_cnF/_star_loi.php
+ErrorDocument 502 /_cnF/_star_loi.php
+ErrorDocument 503 /_cnF/_star_loi.php
+ErrorDocument 504 /_cnF/_star_loi.php
+RewriteRule ^@FILEHETHONG@$ @FILEHETHONG@.php [L]
+RewriteRule ^@TIMKIEM@$ @TIMKIEM@.php [L]
+RewriteRule ^@TIENTRINH@$ @TIENTRINH@.php [L]
+RewriteRule ^error$ _cnF/loi.php [L]
+RewriteRule ^index.html$ index.php [L]
+RewriteRule ^trangchu.html$ home.php [L]
+RewriteRule ^get-token.html$ login/gettoken.php [L]
+RewriteRule ^login-captcha.html$ login/captcha-login.php [L]
+RewriteRule ^check-token.html$ tools/Vip/check.php [L]
+RewriteRule ^([a-zA-Z_-]+)-([a-zA-Z_-]+).html$ home.php?act=$1&id=$2

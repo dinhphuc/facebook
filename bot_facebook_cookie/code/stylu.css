@@ -1,0 +1,25 @@
+.message_box{overflow:auto;height:300px}
+
+.shout_msg{
+	margin-bottom: 10px;
+	display: block;
+	border-bottom: 1px solid #F3F3F3;
+	padding: 0px 5px 5px 5px;
+	font: 11px 'lucida grande', tahoma, verdana, arial, sans-serif;
+	color:#7C7C7C;
+}
+.message_box:last-child {
+	border-bottom:none;
+}
+time{
+	font: 11px 'lucida grande', tahoma, verdana, arial, sans-serif;
+	font-weight: normal;
+	float:right;
+	color: #999;
+}
+.shout_msg .username{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-weight: bold;
+	display: block;
+}

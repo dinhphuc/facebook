@@ -1,0 +1,466 @@
+﻿#ET-container *{
+		box-sizing: border-box;
+	    font-family: Roboto Condensed, sans-serif;
+	}
+
+	#ET-container{
+		background-image: url('../img/template-BG.png');
+		width: 720px;
+		height: 300px;
+		position: fixed;
+		overflow: hidden;
+		top: 100px;
+		left: calc(50% - ( 720px / 2 ));
+		z-index: 1000;
+	}
+
+	#ET-form{
+		width: 300px;
+		height: 130px;
+		position: relative;
+	}
+
+	#ET-datepicker{
+		width: inherit;
+		margin-left: 215px;
+		height: 210px;
+	}
+
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	    display: none;
+	    -webkit-appearance: none;
+	    margin: 0;
+	}
+
+	input.ET-input{
+		width: 90px;
+		height: 40px;
+		background: #feca14; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient( #f9a924, #feca14); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient( #f9a924, #feca14); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient( #f9a924, #feca14); /* For Firefox 3.6 to 15 */
+		background: linear-gradient( #f9a924, #feca14); /* Standard syntax */
+		border : black thin dashed ;
+		border-radius: 5px;
+		margin-top: 163px;
+		color: black;
+		text-align: center;
+		font-weight: bold;
+		font-size: 16px;
+	}
+
+	input.ET-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: black;
+	  font-weight: bold;
+	  text-align: center;
+	  font-size: 14px;
+	  opacity: 0.2;
+	}
+	input.ET-input::-moz-placeholder { /* Firefox 19+ */
+	  color: black;
+	  font-weight: bold;
+	  text-align: center;
+	  font-size: 14px;
+	  opacity: 0.2;
+	}
+	input.ET-input:-ms-input-placeholder { /* IE 10+ */
+	  color: black;
+	  font-weight: bold;
+	  text-align: center;
+	  font-size: 14px;
+	  opacity: 0.2;
+	}
+	input.ET-input:-moz-placeholder { /* Firefox 18- */
+	  color: black;
+	  font-weight: bold;
+	  text-align: center;
+	  font-size: 14px;
+	  opacity: 0.2;
+	}
+
+	#ET-form{
+		width: 100%;
+		height: 210px;
+	}
+
+	#ET-confirmBtn::before{
+		content: "";
+		background-image: url('../img/button-aside1.png');
+		height: 95px;
+		position: absolute;
+		width: 20px;
+		background-size: 20px 95px;
+		top: -15px;
+	}
+
+	#ET-confirmBtn:active{
+		width: 40px;
+		margin-left: calc(285px + (135px/2) - 20px);
+	}
+
+	#ET-confirmBtn::after{
+		content: "";
+		background-image: url('../img/button-aside1.png');
+		height: 95px;
+		position: absolute;
+		width: 20px;
+		background-size: 20px 95px;
+		top: -15px;
+		right: 0px;
+	}
+
+	#ET-confirmBtn{
+		-webkit-transition: all 0.1s; /* Safari */
+    	transition: all 0.1s;
+		margin-top: 10px;
+		cursor: pointer;
+		background-image: url("../img/button.png");
+		background-size: cover;
+		width: 135px;
+		margin-left: 285px;
+		height: 65px;
+		border:none;
+		position: relative;
+    	z-index: 1;
+	}
+
+	.ET-animate-confirmBtn{
+		width: 40px !important;
+		margin-left: calc(285px + (135px/2) - 20px) !important;
+	}
+
+	.ET-input-blink{
+	    animation-name: ETinputblink;
+	    animation-duration: 0.5s;
+	    animation-iteration-count: infinite;
+	}
+
+	@keyframes ETinputblink{
+		from{border : none;}
+		to{border : black thin dashed ;}
+	}
+
+	.ET-grad{
+		position: absolute;
+		background: -webkit-radial-gradient(circle, rgba(255,234,44,1), rgba(255,0,0,0), rgba(255,0,0,0)); /* For Safari 5.1 to 6.0 */
+	    background: -o-radial-gradient(circle, rgba(255,234,44,1), rgba(255,0,0,0), rgba(255,0,0,0)); /* For Opera 11.1 to 12.0 */
+	    background: -moz-radial-gradient(circle, rgba(255,234,44,1), rgba(255,0,0,0), rgba(255,0,0,0)); /* For Firefox 3.6 to 15 */
+	    background: radial-gradient(circle, rgba(255,234,44,1), rgba(255,0,0,0), rgba(255,0,0,0)); /* Standard syntax (must be last) */
+	}
+
+	#ET-grad1{
+		top: 158px;
+    	right: 78px;
+		width: 100px;
+		height: 100px;
+	    animation-name: ETblink;
+	    animation-duration: 2s;
+	    animation-iteration-count: infinite;
+    	z-index: 1;
+	}
+
+
+	#ET-grad2{
+	    top: 16px;
+    	right: -16px;
+	    width: 60px;
+	    height: 60px;
+	    animation-name: ETblink;
+	    animation-duration: 3s;
+	    animation-iteration-count: infinite;
+    	z-index: 1;
+	}
+
+	#ET-grad3{
+	    top: -10px;
+    	right: 103px;
+	    width: 50px;
+	    height: 50px;
+	    animation-name: ETblink;
+	    animation-duration: 4s;
+	    animation-iteration-count: infinite;
+    	z-index: 1;
+	}
+
+	@keyframes ETblink{
+		0% {opacity: 0;}
+    	50% {opacity: 1;}
+    	100% {opacity: 0;}
+	}
+
+	.ET-noselect {
+	  -webkit-touch-callout: none; /* iOS Safari */
+	    -webkit-user-select: none; /* Chrome/Safari/Opera */
+	     -khtml-user-select: none; /* Konqueror */
+	       -moz-user-select: none; /* Firefox */
+	        -ms-user-select: none; /* Internet Explorer/Edge */
+	            user-select: none; /* Non-prefixed version, currently
+	                                  not supported by any browser */
+	}
+
+	#ET-border-tittle{
+	    position: absolute;
+	    top: 18px;
+	    left: 142px;
+	    animation: ETclip;
+	    animation-duration: 2s;
+	    animation-direction: alternate;
+	    animation-iteration-count: infinite;
+    	z-index: 1;
+	}
+
+	#ET-horoscope{
+	    position: absolute;
+    	width: 209px;
+	    top: 96px;
+	    left: -12px;
+	    animation: ETrotate;
+	    animation-duration: 20s;
+	    animation-direction: normal;
+	    animation-iteration-count: infinite;
+	    -webkit-animation-timing-function: linear;
+	}
+
+	@keyframes ETrotate{
+		0%{-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+		100%{-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+	}
+
+	@keyframes ETclip{
+        0%   {clip: rect(80px,500px,100px,0px);}
+        10% {clip: rect(20px,500px,100px,0px);}
+        20% {clip: rect(60px,500px,80px,0px);}
+        30% {clip: rect(30px,500px,50px,0px);}
+        40% {clip: rect(30px,500px,50px,0px);}
+        50% {clip: rect(20px,500px,100px,0px);}
+        60% {clip: rect(60px,500px,80px,0px);}
+        70% {clip: rect(20px,500px,100px,0px);}
+        80% {clip: rect(60px,500px,80px,0px);}
+        90% {clip: rect(30px,500px,50px,0px);}
+        100% {clip: rect(10px,500px,100px,0px);}
+    }
+
+    #ET-result{
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	z-index: 3;
+    	display: none;
+    }
+
+    .ET-popup{
+    	display: block;
+	    animation: ETpopup;
+	    animation-duration: 1s;
+	    animation-direction: normal;
+	    animation-iteration-count: 1;
+	    -webkit-animation-timing-function: linear;
+    }
+
+    @keyframes ETpopup{
+    	0%{width: 0px; height: 0px; top: 150px; left: 360px;-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    	100%{width: 720px; height: 300px; top: 0px; left: 0px;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+    }
+
+    #ET-modal{
+    	width: 100%;
+    	height: 100%;
+    	opacity: 0.6;
+    	background-color: gray;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	z-index: 2;
+    	display: none;
+    }
+
+    #ET-share-alert{
+    	width: 720px;
+    	height: 300px;
+    	margin: auto;
+    	position: absolute;
+    	z-index: 3;
+    	top: 0;
+    	left: 0;
+    	display: none;
+    	background-size: cover;
+    }
+
+    .ET-share-alert-box{
+    	position: absolute;
+        top: 115px;
+	    right: 50px;
+    }
+
+    .ET-alert{
+    	width: 500px;
+    	height: 270px;
+    	margin: auto;
+    	background-color: white;
+    	position: absolute;
+    	z-index: 4;
+    	top: 15px;
+    	left: 110px;
+    	display: none;
+    }
+
+    #ET-close{
+    	margin: auto;
+    	position: absolute;
+    	z-index: 100;
+    	top: 15px;
+    	right: 15px;
+    	line-height: 0.8;
+    }
+
+    #ET-zodiac-info-container{
+	    width: 330px;
+	    height: 135px;
+	    position: absolute;
+	    z-index: 1;
+	    bottom: 62px;
+	    right: 30px;
+	    overflow-y: scroll;
+    }
+
+    #ET-buttons-container{
+	    width: 295px;
+	    height: 49px;
+	    position: absolute;
+	    z-index: 1;
+	    bottom: 9px;
+	    right: 67px;
+    }
+
+    #ET-zodiac-info-content{
+    	width: 100%;
+    	height: auto;
+    	padding: 0;
+    	margin:0;
+    	color: white;
+    	font-size: 14px;
+    	word-break: keep-all;
+    }
+
+	#ET-zodiac-info-container::-webkit-scrollbar-track
+	{
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		border-radius: 10px;
+		background-color: #F5F5F5;
+		display: none;
+	}
+
+	#ET-zodiac-info-container::-webkit-scrollbar
+	{
+		width: 7px;
+		background-color: transparent;
+	}
+
+	#ET-zodiac-info-container::-webkit-scrollbar-thumb
+	{
+		border-radius: 10px;
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+		background-color: white;
+		opacity: 0.1;
+	}
+
+	.ET-buttons{
+		background-color: transparent;
+		border-radius: 0;
+		border:black thin dashed;
+		color: white;
+	    font-size: 18px;
+    	padding: 5px;
+	}
+
+	.ET-buttons:active {
+		border-radius: 0;
+		border:black thin solid;
+		background-color: gray!important;;
+	}
+
+	.ET-buttons:hover{
+   		background-color:#000000;/*You can put the color you want*/
+		border-radius: 0;
+		border:black thin dotted;
+	}
+
+	.ET-buttons:focus {outline:0;}
+
+	.ET-buttons:disabled{
+		background-color: transparent;
+		border-radius: 0;
+		border:black thin dashed;
+		color: gray;
+		cursor: default;
+	}
+
+	#ET-share-to-vip-text{
+	    font-family: Roboto Condensed, sans-serif;
+	    color: white;
+	    text-align: center;
+	    font-weight: lighter;
+    	font-size: 23px;
+	}
+
+	#ET-share{
+		background-color: 	#3b5998 !important;
+	}
+
+	/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(https://fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nDW5FUgIgejJvrHuLWqrSMw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(https://fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nA30BZHTGu2N_DqssQcMQNQ.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(https://fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nPDoBG10JtAX-GAwn6iwU1Y.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(https://fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nGhQuge17febRYSUkWKdLWA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(https://fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nBBtmDLrZTTOm3p1EhiGCXc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(https://fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nEV356qNqHCUb41pS3zqMSE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(https://fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nHm2hrkyco9jQ3NKMXpgOBg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}

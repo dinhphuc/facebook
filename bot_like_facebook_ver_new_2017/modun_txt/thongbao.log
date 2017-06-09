@@ -1,0 +1,28 @@
+								<ul class="dropdown-menu" style="width:400px;padding:0;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;">
+									<div class="box box-success" style="margin-bottom:0;">
+										<div class="box-title box-header with-border">
+											<h4><i class="fa fa-hand-o-right"></i> CHÚ Ý HỆ THỐNG</h4>
+										</div>
+										<div class="box-body" style="padding:1px;">
+											<div class="tabs-container">
+												<div class="tab-content">
+													<div class="box-body">
+														<ul>
+															<h4  style="color:red;text-shadow: 0px 0px 0px rgb(17, 17, 17), 0px 0px 0.5em yellow, 0px 0px 0.4em yellow;"><li>Những Lưu Ý Khi Sử Dụng.</li></h4><br>
+														</ul>
+														<ol>
+															<li class="list-group-item">Hãy Cập Nhật Bot Thường Xuyên Tránh Bot Không Hoạt Động.</li>
+															<li class="list-group-item">Tránh Đổi Mật Khẩu Để Bot Không Bị Xoá.</li>
+															<li class="list-group-item">Nếu Đổi Mật Khẩu, Các Bạn Hãy Cập Nhật Bot Lại Ngay Để Bot Không Bị Xoá.</li>
+															<li class="list-group-item">Không Sử Dụng Token Ở Các WebSite Khác Khi Sài Bot Tại Đây.</li>
+															<li class="list-group-item">Mỗi Tuần, Hệ Thống Sẽ Quét Toàn Bộ Token Và Sẽ Comment Vào Bài Viết Của Bạn Khi Token Đã Chết.</li>
+															<li class="list-group-item">Do Đó, Các Bạn Hãy Để Bài Viết Ở Chế Độ Công Khai.</li>
+															<li class="list-group-item">Và Cuối Cùng Là Cảm Ơn Các Bạn Đã Tin Tưởng Và Sử Dụng Bot Tại Hệ Thống Của Mình.</li>
+															<li class="list-group-item" style="color:red;">Hãy Cùng Nhau Đăng Nhập Và Tận Hưởng.</li>
+														</ol>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</ul>
